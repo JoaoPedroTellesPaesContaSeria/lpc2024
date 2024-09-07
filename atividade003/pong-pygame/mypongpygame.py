@@ -4,6 +4,7 @@
 
 import pygame
 import random
+import os
 
 pygame.init()
 
@@ -15,6 +16,10 @@ SCORE_MAX = 2
 size = (1280, 720)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("MyPong - PyGame Edition - 2024-09-02")
+
+# correct directory addressing
+folder_path = os.path.dirname(__file__)
+os.chdir(folder_path)
 
 # score text
 score_font = pygame.font.Font(r'assets\PressStart2P.ttf', 44)
