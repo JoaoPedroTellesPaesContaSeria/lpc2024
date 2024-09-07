@@ -16,13 +16,13 @@ screen = pygame.display.set_mode(size)
 pygame.display.set_caption("MyPong - PyGame Edition - 2024-09-02")
 
 # score text
-score_font = pygame.font.Font(r'pong-pygame\assets\PressStart2P.ttf', 44)
+score_font = pygame.font.Font(r'assets\PressStart2P.ttf', 44)
 score_text = score_font.render('00 x 00', True, COLOR_WHITE, COLOR_BLACK)
 score_text_rect = score_text.get_rect()
 score_text_rect.center = (680, 50)
 
 # debug text remove later
-debug_font = pygame.font.Font(r'pong-pygame\assets\PressStart2P.ttf', 10)
+debug_font = pygame.font.Font(r'assets\PressStart2P.ttf', 10)
 debug_text = debug_font.render('00 x 00', True, COLOR_WHITE, COLOR_BLACK)
 debug_text_rect = debug_text.get_rect()
 debug_text_rect.center = (50, 120)
@@ -31,17 +31,17 @@ debug_text_2_rect = debug_text_2.get_rect()
 debug_text_2_rect.center = (50, 150)
 
 # victory text
-victory_font = pygame.font.Font(r'pong-pygame\assets\PressStart2P.ttf', 100)
+victory_font = pygame.font.Font(r'assets\PressStart2P.ttf', 100)
 victory_text = victory_font .render('VICTORY', True, COLOR_WHITE, COLOR_BLACK)
 victory_text_rect = score_text.get_rect()
 victory_text_rect.center = (450, 350)
 
 # sound effects
-bounce_sound_effect = pygame.mixer.Sound(r'pong-pygame\assets\bounce.wav')
-scoring_sound_effect = pygame.mixer.Sound(r'pong-pygame\assets\258020__kodack__arcade-bleep-sound.wav')
+bounce_sound_effect = pygame.mixer.Sound(r'assets\bounce.wav')
+scoring_sound_effect = pygame.mixer.Sound(r'assets\258020__kodack__arcade-bleep-sound.wav')
 
 # player 1
-player_1 = pygame.image.load(r"pong-pygame\assets\player.png")
+player_1 = pygame.image.load(r"assets\player.png")
 player_1_y = 300
 player_1_move_up = False
 player_1_move_down = False
@@ -50,7 +50,7 @@ player_1_top = 0
 player_1_bottom = 0
 
 # player 2 - robot
-player_2 = pygame.image.load(r"pong-pygame\assets\player2.png")
+player_2 = pygame.image.load(r"assets\player2.png")
 player_2_y = 300
 player_2_move_up = False
 player_2_move_down = False
@@ -59,7 +59,7 @@ player_2_top = 0
 player_2_bottom = 0
 
 # ball
-ball = pygame.image.load(r"pong-pygame\assets\ball.png")
+ball = pygame.image.load(r"assets\ball.png")
 ball_x = 640
 ball_y = 360
 ball_dx = 5
