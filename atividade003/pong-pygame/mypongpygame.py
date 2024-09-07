@@ -1,4 +1,5 @@
 # Jucimar Jr
+# João Pedro Telles Paes 2415310011
 # 2024
 
 import pygame
@@ -249,10 +250,10 @@ while game_loop:
 
 
     # remove later debug info
-    debug_text = debug_font.render(f'{ball_relative_y_p1:.2f} | player 1 center pos: {player_1_center} | ball x speed: {ball_dx:.2f} | ball y speed: {ball_dy:.2f}', True, COLOR_WHITE, COLOR_BLACK)
-    debug_text2 = debug_font.render(f'DEBUG REMOVER DEPOIS', True, COLOR_WHITE, COLOR_BLACK)
-    screen.blit(debug_text_2, debug_text_rect)
-    screen.blit(debug_text,debug_text_2_rect)
+    #debug_text = debug_font.render(f'{ball_relative_y_p1:.2f} | player 1 center pos: {player_1_center} | ball x speed: {ball_dx:.2f} | ball y speed: {ball_dy:.2f}', True, COLOR_WHITE, COLOR_BLACK)
+    #debug_text2 = debug_font.render(f'DEBUG REMOVER DEPOIS', True, COLOR_WHITE, COLOR_BLACK)
+    #screen.blit(debug_text_2, debug_text_rect)
+    #screen.blit(debug_text,debug_text_2_rect)
 
     # update screen
     pygame.display.flip()
